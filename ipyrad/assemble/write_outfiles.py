@@ -2275,7 +2275,7 @@ def vcfchunk(data, optim, sidx, chunk, full):
     cols0 = np.zeros(nrows, dtype=np.int64) #h5py.special_dtype(vlen=bytes))
     cols1 = np.zeros(nrows, dtype=np.uint32)
     cols34 = np.zeros((nrows, 2), dtype="S5")
-    cols7 = np.zeros((nrows, 1), dtype="S20")
+    cols7 = np.zeros((nrows, 1), dtype="S24")
 
     ## when nsamples is high this blows up memory (e.g., dim=(5M x 500))
     ## so we'll instead create a list of arrays with 10 samples at a time.
